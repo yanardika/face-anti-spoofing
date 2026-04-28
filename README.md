@@ -34,7 +34,7 @@ The emphasis of this project is on **data quality** and **training robustness**:
 
 ## Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=flat&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![timm](https://img.shields.io/badge/timm-ViT--Base-blueviolet?style=flat)
 ![Albumentations](https://img.shields.io/badge/Albumentations-FF6F00?style=flat)
