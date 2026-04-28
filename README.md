@@ -111,7 +111,7 @@ flowchart TD
 ```
 
 - **Backbone:** `vit_base_patch16_clip_224.openai_ft_in12k_in1k` via `timm`
-- **Loss:** Weighted Label Smoothing Cross-Entropy — handles class imbalance via inverse-frequency class weights, smoothing factor 0.1
+- **Loss:** Weighted Label Smoothing Cross-Entropy to handles class imbalance via inverse-frequency class weights, smoothing factor 0.1
 - **Optimizer:** AdamW with weight decay 1e-4
 - **Scheduler:** Linear warmup → Cosine annealing (Phase 1) / Cosine annealing (Phase 2)
 - **Regularization:** Mixup (α=0.2), label smoothing, dropout, drop path (0.1)
@@ -130,7 +130,7 @@ Real-world face anti-spoofing datasets are noisy. This pipeline addresses the fo
 | Tilted/rotated images from smartphones | Auto-rotate using PIL EXIF tag 274 before augmentation |
 | Mislabeled images | OOF-based auto-relabeling with deterministic confidence thresholds |
 | Resolution mismatch (256px–4096px) | Normalize max side to 1024px to prevent blur on small images |
-| Extremely dark/corrupt images | Brightness threshold — remove images with mean pixel value < 20 |
+| Extremely dark/corrupt images | Brightness threshold to remove images with mean pixel value < 20 |
 | Class imbalance | Inverse-frequency class weights in loss function |
 
 ---
