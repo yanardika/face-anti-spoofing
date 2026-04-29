@@ -176,7 +176,7 @@ The entire pipeline is deterministic and requires zero manual steps:
 
 ---
 
-## License
+## Disclaimer
 
 This project is built for portfolio and learning purposes. The dataset comes from Kaggle DAC FindIt 2026.
 
