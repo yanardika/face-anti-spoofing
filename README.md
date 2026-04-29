@@ -18,6 +18,24 @@ The emphasis of this project is on **data quality** and **training robustness**:
 | **Training** | 2-round self-correcting pipeline with 5-fold cross-validation |
 
 ---
+## Repository Structure
+
+```
+face-anti-spoofing/
+│
+├── README.md
+│
+├── notebook/
+│   └── face_anti_spoofing.ipynb       # End-to-end notebook
+│
+└──  assets/
+    ├── confusion_matrix.png           # Confusion matrix visualization
+    ├── relabel.png                    # Auto-relabeling candidates grid
+    └── round_2_predict.png            # Round 2 sample predictions
+
+```
+
+---
 
 ## Detected Attack Types
 
@@ -155,25 +173,6 @@ The entire pipeline is deterministic and requires zero manual steps:
 - Auto-relabeling uses fixed confidence thresholds (`conf_new ≥ 0.90`, `conf_old ≤ 0.05`)
 - Pseudolabeling uses a fixed threshold (`0.85`)
 
----
-
-## Repository Structure
-
-```
-face-anti-spoofing/
-│
-├── README.md
-│
-├── notebook/
-│   └── face_anti_spoofing.ipynb       # End-to-end notebook
-│
-├── assets/
-│   ├── confusion_matrix.png           # Confusion matrix visualization
-│   ├── relabel.png                    # Auto-relabeling candidates grid
-│   └── round_2_predict.png            # Round 2 sample predictions
-│
-└── requirements.txt
-```
 
 ---
 
